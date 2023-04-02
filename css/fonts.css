@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'comic-sans-ms';
+    src: url('../assets/fonts/comic-sans-ms/comici.ttf') format('truetype'),
+        url('../assets/fonts/comic-sans-ms/ComicSansMS3.ttf') format('truetype'),
+        url('../assets/fonts/comic-sans-ms/comicz.ttf') format('truetype'),
+        url('../assets/fonts/comic-sans-ms/design.graffiti.comicsansms.ttf') format('truetype'),
+        url('../assets/fonts/comic-sans-ms/design.graffiti.comicsansmsgras.ttf') format('truetype'),
+        url('../assets/fonts/comic-sans-ms/COMIC.TTF') format('truetype');
+}
