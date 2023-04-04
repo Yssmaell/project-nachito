@@ -23,7 +23,7 @@ $(document).ready(function() {
       if (!$('html').hasClass('animated') && !$('body').hasClass('animated')) {
         $('html, body').addClass('animated');
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 150
         }, 1000, function() {
           $('html, body').removeClass('animated');
         });

@@ -27,7 +27,7 @@ header {
 
 .zoom img {
     max-height: 450px;
-    width: 100%;
+    width: 450px;
 }
 
 div.row.collage>div.col-sm-4.col-md-3,
@@ -35,8 +35,21 @@ div.row.collage>div.col-sm-4.col-md-3>* {
     padding: 0px;
 }
 
+:root {
+    --background-color: #7e98c8;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.sprite-icon img{    
+    width: 300px;
+}
+
+ 
 .nav_class {
-    background-color: #92C87E;
+    background-color: var(--background-color);
 }
 
 .tc {
@@ -53,7 +66,8 @@ a {
     bottom: 0;
 }
 
-.paypal-btn {
+.paypal-btn,
+.mercado-pago-btn {
     background-color: #003087;
     color: #ffffff;
     border: none;
@@ -69,8 +83,12 @@ a {
     background-size: 100px 26px;
     background-position: center;
     font-family: Arial, sans-serif;
+    min-width: 150px;
 }
 
+button a {
+    color: #ffffff;
+}
 
 .logo_img {
     width: 150px;
@@ -195,7 +213,7 @@ footer {
     display: flex;
     text-align: center;
     padding-bottom: 20px;
-    background-color: #92C87E;
+    background-color: var(--background-color);
     color: black;
 }
 
@@ -268,6 +286,20 @@ footer i {
     font-size: 20px;
     text-align: center
 }
+
+.carousel-caption{
+    top: 40%;
+    font-size: 20px;
+    color: black;
+    /* text-align: center; */
+    /* color: white;   */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 800px;
+}
+
 
 
 @media only screen and (max-width: 768px) {
