@@ -1,5 +1,3 @@
-@import './navbar.CSS';
-
 html,
 body {
     min-height: 100vh;
@@ -7,24 +5,31 @@ body {
     font-family: 'comic-sans-ms', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 header {
     background-color: #92C87E;
     display: flex;
 }
 
-.nav_class{
+.nav_class {
     background-color: #92C87E;
 }
-.tc{
+
+.tc {
     text-align: center;
 }
 
 a {
     text-decoration: none;
 }
-.scroll-class{
+
+.scroll-class {
     /* overflow-y: scroll; */
-    position: sticky; bottom: 0;
+    position: sticky;
+    bottom: 0;
 }
 
 .paypal-btn {
@@ -39,13 +44,12 @@ a {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    background-image: url('https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/C2/logos-buttons/optimize/44_PayPal_Logo_Horizontal_Transparent.png');
     background-repeat: no-repeat;
     background-size: 100px 26px;
     background-position: center;
     font-family: Arial, sans-serif;
-  }
-  
+}
+
 
 .logo_img {
     width: 150px;

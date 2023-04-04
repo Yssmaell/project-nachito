@@ -12,17 +12,25 @@ var prevScrollpos = d.offsetTop + (d.clientHeight/2);
 }
 
 
-var modal = document.getElementById("exampleModal");
 
-modal.onhide = function(){
-  // document.getElementById("side-bar").style.right = "0px";
-  document.getElementById("side-bar").style.display = "block";
-};
 
-modal.onshown  = function(){
-  // document.getElementById("side-bar").style.right = "-150px";
-  document.getElementById("side-bar").style.display = "none";
-};
+$(document).ready(function() {
+  // Agrega un desplazamiento suave a todos los enlaces internos
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      if (!$('html').hasClass('animated') && !$('body').hasClass('animated')) {
+        $('html, body').addClass('animated');
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          $('html, body').removeClass('animated');
+        });
+      }
+    }
+  });
+});
 
 
 // window.addEventListener("shown.bs.modal", function(){

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>jquery.min.js
 <html lang="es-la">
 
 <head>
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <!-- <link rel="stylesheet" href="./css/app.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top nav_class">
                 <div class="logo-container">
-                    <a class="logo sprite-icon" href="Home">
+                    <a class="logo sprite-icon" href="#Home">
                         <img class="logo_img" src="./assets/img/nico_logo.png" alt="#TodosxNachito2023" />
                     </a>
                 </div>
@@ -56,7 +57,7 @@
         </div>
     </header>
 
-    <div class="banner mb-3">
+    <div class="banner mb-3" id="home">
         <div id="carouselControlsIndex" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselControlsIndex" data-slide-to="0" class="active"></li>
@@ -306,10 +307,12 @@
                             <br>
                             <br>
                             <strong>Paypal</strong><br>
-                            <img class="my-3" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png"
-                            alt="logo_paypal">
+                            <img class="my-3"
+                                src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png"
+                                alt="logo_paypal">
                             <br>
-                            <button class="paypal-btn" onclick="window.location.href='https://www.paypal.me/nachito2023'">
+                            <button class="paypal-btn"
+                                onclick="window.location.href='https://www.paypal.me/nachito2023'">
                                 Pagar con PayPal
                             </button>
                         </div>
@@ -474,9 +477,9 @@
 
 
     <script type="text/javascript" src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
