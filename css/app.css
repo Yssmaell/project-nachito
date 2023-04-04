@@ -12,10 +12,42 @@ header {
     display: flex;
 }
 
+.nav_class{
+    background-color: #92C87E;
+}
+.tc{
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
-.logo_img{
+.scroll-class{
+    /* overflow-y: scroll; */
+    position: sticky; bottom: 0;
+}
+
+.paypal-btn {
+    background-color: #003087;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url('https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/C2/logos-buttons/optimize/44_PayPal_Logo_Horizontal_Transparent.png');
+    background-repeat: no-repeat;
+    background-size: 100px 26px;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  
+
+.logo_img {
     width: 150px;
     border-radius: 10px;
 }
@@ -25,9 +57,10 @@ h3,
     font-size: 21px;
 }
 
-.lista_footer{
+.lista_footer {
     text-align: center;
 }
+
 .no-float {
     float: none !important;
 }
