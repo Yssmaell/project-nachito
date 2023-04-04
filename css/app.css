@@ -14,6 +14,27 @@ header {
     display: flex;
 }
 
+
+.zoom {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.zoom img:hover {
+    transform: scale(1.1);
+}
+
+
+.zoom img {
+    max-height: 450px;
+    width: 100%;
+}
+
+div.row.collage>div.col-sm-4.col-md-3,
+div.row.collage>div.col-sm-4.col-md-3>* {
+    padding: 0px;
+}
+
 .nav_class {
     background-color: #92C87E;
 }
@@ -174,7 +195,7 @@ footer {
     display: flex;
     text-align: center;
     padding-bottom: 20px;
-    background-color: #efefef;
+    background-color: #92C87E;
     color: black;
 }
 
